@@ -6,6 +6,7 @@ class VisitsController < ApplicationController
   def index
     @user = User.find_by(id: params[:user_id])
     @visits = @user.visits.all
+    render :layout => "login_register"
   end
 
   def new

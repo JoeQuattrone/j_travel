@@ -1,4 +1,5 @@
-body > div > div.container {
+/*  login & register styles */
+body > div > div.login-register {
   font-family: 'Oswald';
   margin-top: 8%;
 }
@@ -9,4 +10,10 @@ div.card-block {
 
 div.facebook-container {
   padding: 2.5%;
+}
+
+/*  My profile styles */
+
+div.user-profile {
+  margin-top: 4%;
 }

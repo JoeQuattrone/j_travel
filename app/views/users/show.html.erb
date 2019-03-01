@@ -1,14 +1,14 @@
-<%= render 'users/searchbar' %>
+<div class="container user-profile" >
+  <h1 class="text-center">Welcome, <%= @user.first_name.capitalize %></h1>
+  <hr>
+  <% if !@user.visits.empty? %>
+    <h4>1. <%= link_to "View your trips", user_visits_path(@user)%></h4>
 
+    <% else %>
+    <h3>It seems you don't have any trips booked. Book now to get started!</h3>
+    <%= link_to "SEARCH TRIPS", root_path, class: "btn btn-primary" %>
+  <% end %>
+  <h4>2. <%= link_to "Edit your account", edit_user_path(@user) %></h4>
 
-<h1>Welcome <%= @user.first_name %></h1>
-<% if !@user.visits.empty? %>
-  <h4>View your reservations</h4>
-  <%= link_to "Your reservations", user_visits_path(@user)%>
-  <% else %>
-  <h3>It seems you don't have any trips booked. Book now to get started!</h3>
-  <%= link_to "SEARCH TRIPS", root_path, class: "btn btn-primary" %>
-<% end %>
-<%= link_to "Edit your account", edit_user_path(@user) %>
-
-<h6><%= flash[:message] if flash[:message] %></h6>
+  <h6><%= flash[:message] if flash[:message] %></h6>
+</div>
