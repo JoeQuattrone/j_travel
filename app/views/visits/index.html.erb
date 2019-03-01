@@ -1,0 +1,4 @@
+<h1>Your Trips</h1>
+<% @visits.each do |visit| %>
+  <p><%= format_start_visit(visit) %> - <%= format_end_visit(visit) %>: <%= link_to visit.hotel.name, user_visit_path(@user, visit)%></p>
+<% end %>

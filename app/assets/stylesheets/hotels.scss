@@ -1,0 +1,77 @@
+// Place all the styles related to the hotels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// hotels.html.erb layout //
+header#hotels-header {
+  position: relative;
+  background: #222;
+}
+
+
+
+
+// hotels index page //
+.hotels-wrapper {
+  margin-top: 10%;
+}
+
+.hotel-image-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+.right-align {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.hotel-row {
+  margin-bottom: 8%;
+}
+
+
+// hotels show page //
+div.hotel-row-show {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+div.availablity-form {
+  margin-top: 2%;
+}
+.container {
+  color: #222;
+}
+h4 {
+  text-align: center;
+}
+
+
+
+
+// hotels/id/visits/new page //
+body > div > div.container  p {
+  color: #333
+}
+
+body > div > div.container > div.availablity-form.text-center > h4 {
+  margin: 3% 0;
+}
+
+
+
+
+
+// users/id/visits/id  //
+.flash-field {
+  color: rgb(80, 173, 85);
+}
+#home-btn {
+  padding: .375rem 2.1rem;
+}

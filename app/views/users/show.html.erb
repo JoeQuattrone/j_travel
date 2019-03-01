@@ -1,0 +1,11 @@
+<%= render 'users/searchbar' %>
+
+
+<h1>Welcome <%= @user.first_name %></h1>
+<% if !@user.visits.empty? %>
+  <h4>View your reservations</h4>
+  <%= link_to "Your reservations", user_visits_path(@user)%>
+<% end %>
+<%= link_to "Edit your account", edit_user_path(@user) %>
+
+<h6><%= flash[:message] if flash[:message] %></h6>
