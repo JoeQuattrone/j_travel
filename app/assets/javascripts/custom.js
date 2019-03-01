@@ -20,6 +20,16 @@ $(document).ready(function()
 {
 	"use strict";
 
+// 0. My Custom JS - Joe Q
+
+	// $( ".destination-link" ).on( "click", function() {
+	//   console.log( $( this ).session );
+	// });
+
+	//
+
+
+
 	/*
 
 	1. Vars and Inits

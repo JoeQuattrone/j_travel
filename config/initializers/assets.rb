@@ -18,6 +18,7 @@ Rails.application.config.assets.precompile += %w( main_styles.css )
 Rails.application.config.assets.precompile += %w( responsive.css )
 Rails.application.config.assets.precompile += %w( custom_styles.css )
 Rails.application.config.assets.precompile += %w( login_register.css )
+Rails.application.config.assets.precompile += %w( home.css )
 
 #compile javascripts
 Rails.application.config.assets.precompile += %w( jquery-3.2.1.min.js )

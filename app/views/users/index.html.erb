@@ -145,17 +145,23 @@
 					<div class="destinations_container item_grid">
 
 						<!-- Destination -->
+
 						<div class="destination item">
+							<a href="#" class="destination-link">
 							<div class="destination_image">
 								<%= image_tag("destination_1.jpg") %>
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Bali</a></div>
+								<div class="destination_title">
+									<%= render partial: "destinations_form", locals: {city: "Bali"} %>
+								</div>
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
+							</a>
 						</div>
+
 
 						<!-- Destination -->
 						<div class="destination item">
@@ -163,7 +169,9 @@
 								<%= image_tag("destination_2.jpg") %>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Indonesia</a></div>
+								<div class="destination_title">
+									<%= render partial: "destinations_form", locals: {city: "Thailand"} %>
+								</div>
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
@@ -175,7 +183,9 @@
 								<%= image_tag("destination_3.jpg") %>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">San Francisco</a></div>
+								<div class="destination_title">
+									<%= render partial: "destinations_form", locals: {city: "San Francisco"} %>
+								</div>
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
@@ -187,7 +197,9 @@
                 <%= image_tag("destination_4.jpg") %>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Paris</a></div>
+								<div class="destination_title">
+									<%= render partial: "destinations_form", locals: {city: "Paris"} %>
+								</div>
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
@@ -198,7 +210,9 @@
 							<div class="destination_image">
 								<%= image_tag("destination_5.jpg") %>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Phi Phi Island</a></div>
+								<div class="destination_title">
+									<%= render partial: "destinations_form", locals: {city: "Fiji"} %>
+								</div>
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
@@ -212,7 +226,9 @@
 								<%= image_tag("destination_6.jpg") %>
 							<div class="destination_content">
 								<div class="destination_title"><a href="destinations.html">Mykonos</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_subtitle">
+									<%= render partial: "destinations_form", locals: {city: "Mykonos"} %>
+								</div>
 								<div class="destination_price">From $679</div>
 							</div>
 						</div>
