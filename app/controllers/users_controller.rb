@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :set_user
 
   def index
     render :layout => "application"
@@ -7,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def new
-    #render :layout => false
     @user = User.new
+    render :layout => "login_register"
   end
 
   def create
@@ -22,7 +23,7 @@ class UsersController < ApplicationController
   end
 
   def signin
-
+    render :layout => "login_register"
   end
 
   def login
@@ -45,7 +46,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by(id: params[:id])
     if logged_in?(@user)
-      render 'show'
+      render 'show', :layout => "login_register"
     else
       redirect_to root_path
     end

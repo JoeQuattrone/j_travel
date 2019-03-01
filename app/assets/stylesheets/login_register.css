@@ -1,0 +1,12 @@
+body > div > div.container {
+  font-family: 'Oswald';
+  margin-top: 8%;
+}
+
+div.card-block {
+  padding: 2.5%;
+}
+
+div.facebook-container {
+  padding: 2.5%;
+}

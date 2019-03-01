@@ -17,8 +17,8 @@ class VisitsController < ApplicationController
 
   def check_availability
     @hotel = Hotel.find_by(id: params[:id])
-    #parses date string into datetime for Database
 
+    #parses date string into datetime for Database
     check_in = DateTime.strptime(visit_params[:check_in], '%m/%d/%Y') rescue nil
     check_out = DateTime.strptime(visit_params[:check_out], '%m/%d/%Y') rescue nil
 

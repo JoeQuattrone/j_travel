@@ -1,4 +1,5 @@
 class HotelsController < ApplicationController
+  before_action :set_user
   layout "hotels"
 
   def index

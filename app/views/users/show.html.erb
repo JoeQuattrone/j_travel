@@ -5,6 +5,9 @@
 <% if !@user.visits.empty? %>
   <h4>View your reservations</h4>
   <%= link_to "Your reservations", user_visits_path(@user)%>
+  <% else %>
+  <h3>It seems you don't have any trips booked. Book now to get started!</h3>
+  <%= link_to "SEARCH TRIPS", root_path, class: "btn btn-primary" %>
 <% end %>
 <%= link_to "Edit your account", edit_user_path(@user) %>
 

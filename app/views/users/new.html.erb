@@ -1,16 +1,16 @@
 <div class="container">
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2>
+      <h3>
         <%= pluralize(@user.errors.count, "error") %>
         prohibited this user from being saved:
-      </h2>
+      </h3>
 
-      <ul>
+      <ol>
       <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <li class="field-with-errors"><%= msg %></li>
       <% end %>
-      </ul>
+      </ol>
     </div>
   <% end %>
 
@@ -22,23 +22,25 @@
         <div class="row">
           <div class ="col-md-6">
             <div class="form-group">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+              <%= f.label :first_name %><br />
+              <%= f.text_field :first_name, autofocus: true, class: 'form-control' %>
             </div>
             <div class="form-group">
-              <%= f.label :first_name %><br />
-              <%= f.text_field :first_name, class: 'form-control' %>
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autocomplete: "email", class: 'form-control' %>
             </div>
           </div>
-
           <div class ="col-md-6">
+            <div class="form-group">
+              <%= f.label :last_name %><br />
+              <%= f.text_field :last_name, class: 'form-control' %>
+            </div>
             <div class="form-group">
               <%= f.label :password %>
               <br />
               <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
             </div>
           </div>
-
           <div class ="col-md-10"></div>
           <div class ="col-md-2">
             <div class="form-group">
@@ -51,6 +53,7 @@
     </div>
   </div>
 
-  <p>Or</p>
-  <p><%= link_to('Sign up with Facebook!', '/auth/facebook') %></p>
+  <div class="facebook-container">
+    <h4>Or <%= link_to('Sign up with Facebook!', '/auth/facebook') %></h4>
+  </div>
 </div>
