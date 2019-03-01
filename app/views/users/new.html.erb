@@ -16,7 +16,9 @@
 
   <div class="card">
     <div class="card-block">
-
+      <% if flash[:message] %>
+        <h5 class="field-with-errors"><%= flash[:message] %></h5>
+      <% end %>
       <h2>Sign up</h2>
       <%= form_for @user do |f| %>
         <div class="row">

@@ -42,7 +42,7 @@ class VisitsController < ApplicationController
       redirect_to user_visit_path(@visit.user, @visit.id)
 
     else
-      flash[:message] = "Please login or sign up to book your visit!"
+      flash[:message] = "Please login or Register to book your visit!"
       redirect_to signin_path
     end
   end

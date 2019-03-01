@@ -15,7 +15,7 @@
       </a>
     </div>
   </div>
-    <h4 class="text-center">Hurray, these dates are available!</h4>
+    <h4 class="text-center">Hooray! These dates are available.</h4>
     <div class="availablity-form text-center">
       <h4><%= format_start_visit(@visit) %> - <%= format_end_visit(@visit) %></h4>
 
@@ -27,8 +27,8 @@
       <% end %>
 
       <% else %>
-        <% flash[:message] = "Login or signup to book a hotel!" %>
-        <%= link_to "BOOK NOW", signin_path %>
+        <% flash[:message] = "Login or Register to book a hotel!" %>
+        <%= link_to "BOOK NOW", new_user_path %>
       <% end %>
     </div>
   </div>
