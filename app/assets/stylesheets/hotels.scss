@@ -2,17 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// hotels.html.erb layout //
+//General Hotels Styles //
 header#hotels-header {
   position: relative;
-  background: #222;
-  // background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
+  // background: #222;
+  background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
+}
+
+.container {
+  color: #72728c;
+}
+
+.container h2,h3 {
+  color: #181818;
 }
 
 
 
-
 // hotels index page //
+
+h1,h2,h3,h4,h5,h6 {
+  color: #181818;
+}
+
+.hotel-link {
+  // color: #1371b9;
+  // color: #222;
+  color: #10507a;
+}
+
+.hotel-link:hover {
+  color: #0e90f2;
+}
+
 .hotels-wrapper {
   margin-top: 10%;
 }
@@ -46,10 +68,6 @@ div.hotel-row-show {
 div.availablity-form {
   margin-top: 2%;
 }
-.container {
-  color: #222;
-}
-
 
 
 
