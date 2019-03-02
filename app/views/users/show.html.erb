@@ -5,8 +5,7 @@
     <h4>1. <%= link_to "View your trips", user_visits_path(@user)%></h4>
 
     <% else %>
-    <h3>It seems you don't have any trips booked. Book now to get started!</h3>
-    <%= link_to "SEARCH TRIPS", root_path, class: "btn btn-primary" %>
+    <h4>1. It seems you don't have any trips booked.  <%= link_to "Book now to get started!", root_path %></h4>
   <% end %>
   <h4>2. <%= link_to "Edit your account", edit_user_path(@user) %></h4>
 
