@@ -1,10 +1,4 @@
-// Place all the styles related to the hotels controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 //General Hotels Styles //
-
-
 header#hotels-header {
   position: relative;
   background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
@@ -76,17 +70,17 @@ div.hotel-row {
   margin-left: 18%;
 }
 
-// #avail-submit {
-//   display: block;
-//   position: relative;
-//   bottom: 0;
-//   float:right;
-// }
+#avail-submit {
+  width: 100%;
+
+}
 
 // div that controls the check availability button
-body > div > div.container > div:nth-child(2) > div > form > div:nth-child(5) {
-  width: 20%;
-  float: right;
+#last-fg {
+  margin-top: 29px;
+  margin-left: 2%;
+  width: 10%;
+  float: left;
 }
 
 
@@ -111,4 +105,17 @@ body > div > div.container > div.availablity-form.text-center > h5 {
 }
 #home-btn {
   padding: .375rem 1.8rem;
+}
+
+
+
+
+// Meadia quries for responsiveness //
+@media only screen and (max-width: 1000px) {
+  #last-fg {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    clear:both;
+  }
 }

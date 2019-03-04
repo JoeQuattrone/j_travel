@@ -32,9 +32,8 @@
         <%= label_tag(:check_out, "Check out") %>
         <%= text_field_tag :check_out, nil, placeholder: "mm/dd/yy", class: "form-control"  %>
       </div>
-      <div class="form-group">
-        <%= label_tag(:ignore, "Check outttttttttttt", style: "color: white") %>
-        <%= submit_tag "Check availablity", class: "btn btn-primary", id: "avail-submit" %>
+      <div class="form-group" id="last-fg">
+        <%= submit_tag "Search", class: "btn btn-primary", id: "avail-submit" %>
       </div>
 
       <% end %>
