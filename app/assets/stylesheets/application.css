@@ -12,11 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
- body {
-
- }
 
  .background_image {
    background-image: url(home_slider.jpg);

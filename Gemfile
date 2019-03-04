@@ -29,6 +29,8 @@ gem 'json'
 gem 'rest-client'
 gem 'rb-readline'
 gem 'bcrypt'
+gem "font-awesome-rails"
+
 
 #omniauth gems
 gem 'omniauth'

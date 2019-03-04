@@ -20,5 +20,9 @@
 }
 
 .disabled {
-  cursor: default;
+  cursor: text;
 }
+
+/* .disabled:hover {
+
+} */

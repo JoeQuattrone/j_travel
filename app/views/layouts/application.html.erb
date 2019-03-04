@@ -67,27 +67,30 @@
 
     	<div class="menu">
     		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-    			<div class="menu_logo"><a href="index.html">Travello</a></div>
+    			<div class="menu_logo"><a href="index.html">J-Travel</a></div>
     			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
     		</div>
     		<div class="menu_content">
     			<ul>
-    				<li><a href="index.html">Home</a></li>
-    				<li><a href="about.html">About us</a></li>
-    				<li><a href="#">Services</a></li>
-    				<li><a href="news.html">News</a></li>
-    				<li><a href="contact.html">Contact</a></li>
+    				<li class="active"><%= link_to "Home", root_path %></li>
+    				<li><a href="#" class="disabled">About us</a></li>
+    				<li><a href="#"class="disabled">Contact</a></li>
+
+            <% if @user && !@user.id.nil? %>
+              <li><%= link_to "My Profile", user_path(@user) %></li>
+              <li><%= link_to "Logout", logout_path %></li>
+            <% else %>
+              <li><%= link_to "Sign In", signin_path %></li>
+              <li><%= link_to "Register", new_user_path %></li>
+            <% end %>
     			</ul>
     		</div>
     		<div class="menu_social">
-    			<div class="menu_phone ml-auto">Call us: 00-56 445 678 33</div>
+    			<div class="menu_phone ml-auto">Call us: 05 445 678 3379</div>
     			<ul class="d-flex flex-row align-items-start justify-content-start">
-    				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-    				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-    				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-    				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    				<li><a href="https://github.com/JoeQuattrone" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    				<li><a href="https://www.facebook.com/joe.quattrone.7" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    				<li><a href="https://www.linkedin.com/in/joseph-quattrone-47382b103/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
     			</ul>
     		</div>
     	</div>
