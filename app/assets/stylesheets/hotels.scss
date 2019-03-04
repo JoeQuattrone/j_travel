@@ -10,6 +10,10 @@ header#hotels-header {
   background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
 }
 
+.disabled {
+  cursor: default;
+}
+
 
 // hotels index page //
 

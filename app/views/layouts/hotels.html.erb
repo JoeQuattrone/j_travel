@@ -33,8 +33,8 @@
     							<nav class="main_nav">
     								<ul class="d-flex flex-row align-items-start justify-content-start">
     									<li><%= link_to "Home", root_path %></li>
-    									<li><a href="#">About us</a></li>
-    									<li><a href="#">Contact</a></li>
+    									<li><a href="#" class="disabled">About us</a></li>
+    									<li><a href="#" class="disabled">Contact</a></li>
                       <% if @user && !@user.id.nil? %>
       									<li><%= link_to "My Profile", user_path(@user) %></li>
                         <li><%= link_to "Logout", logout_path %></li>

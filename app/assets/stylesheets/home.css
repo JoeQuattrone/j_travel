@@ -17,5 +17,8 @@
 
 #home_search_form > input.destination_title.destination-form:hover {
   cursor:pointer;
+}
 
+.disabled {
+  cursor: default;
 }
