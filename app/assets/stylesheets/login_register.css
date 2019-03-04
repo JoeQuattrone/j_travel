@@ -4,26 +4,24 @@ body > div > div.login-register {
   margin-top: 8%;
 }
 
-div.card-block {
+.card-block {
   padding: 2.5%;
 }
 
-div.facebook-container {
+.facebook-container {
   padding: 2.5%;
 }
 
 /*  My profile styles */
-
-div.user-profile {
+.user-profile {
   margin-top: 4%;
+}
+
+label {
+  color: #72728c;
 }
 
 /* #search-trips {
   display: inline-block;
   margin-left: 2%;
 }
-
-body > div > div.container.user-profile > h4:nth-child(3) {
-  display: inline-block;
-  float: left;
-} */

@@ -3,36 +3,29 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //General Hotels Styles //
+
+
 header#hotels-header {
   position: relative;
-  // background: #222;
   background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
 }
-
-.container {
-  color: #72728c;
-}
-
-.container h2,h3 {
-  color: #181818;
-}
-
 
 
 // hotels index page //
 
-h1,h2,h3,h4,h5,h6 {
-  color: #181818;
+h2.price {
+  color: #2e2e2e;
 }
 
 .hotel-link {
   // color: #1371b9;
-  // color: #222;
-  color: #10507a;
+  color: #2e2e2e;
+  // color: #10507a;
 }
 
 .hotel-link:hover {
-  color: #0e90f2;
+  // color:  #1371b9;
+  color:  #007bff;
 }
 
 .hotels-wrapper {
@@ -60,23 +53,43 @@ div.hotel-row {
 
 
 // hotels show page //
-div.hotel-row-show {
+.hotel-row-show {
   margin-top: 8%;
   margin-bottom: 8%;
 }
 
-div.availablity-form {
+.availablity-form {
   margin-top: 2%;
 }
+
+.avail-input {
+  float: left;
+  width: 30%;
+  margin-left: 2%;
+}
+
+#first-input {
+  margin-left: 18%;
+}
+
+// #avail-submit {
+//   display: block;
+//   position: relative;
+//   bottom: 0;
+//   float:right;
+// }
+
+// div that controls the check availability button
+body > div > div.container > div:nth-child(2) > div > form > div:nth-child(5) {
+  width: 20%;
+  float: right;
+}
+
 
 
 
 
 // hotels/id/visits/new page //
-body > div > div.container  p {
-  color: #333
-}
-
 body > div > div.container > div.availablity-form.text-center > h4 {
   margin: 3% 0;
 }
