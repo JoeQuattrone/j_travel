@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_02_26_180738) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "hotels", force: :cascade do |t|
     t.string "address"
     t.string "image_url"
@@ -36,7 +39,7 @@ ActiveRecord::Schema.define(version: 2019_02_26_180738) do
     t.datetime "start_visit"
     t.datetime "end_visit"
     t.integer "user_id"
-    t.integer "hotel_id"
+    t.bigint "hotel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["hotel_id"], name: "index_visits_on_hotel_id"
