@@ -69,6 +69,9 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def privacy_policy
+    render :layout => "hotels"
+  end
 
   private
 
