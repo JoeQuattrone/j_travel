@@ -4,13 +4,17 @@ header#hotels-header {
   background-image: linear-gradient( rgb(8,79,124), rgb(64,107,140) );
 }
 
+//height of header //
+#hotels-nav > div > div {
+  height: 120px;
+}
+
 .disabled {
   cursor: text;
 }
 
 
 // hotels index page //
-
 h2.price {
   color: #2e2e2e;
 }
