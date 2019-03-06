@@ -1,24 +1,15 @@
-# README
+# J-Travel
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+J-Travel is a mock travel website with real data from hotels.com that mimics a real travel agency website. Users can search J-Travel for hotels, create a profile,  book a room, and more.
 
-Things you may want to cover:
+This website is intended for demonstration purposes only and will no be monetized.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Ruby version
+  - 2.5.3
+## Technologies Used
+  - Rails 5.2.2
+  - Nokogiri
+  - Postgresql
+  - omniauth
+## Website
+  - https://j-travel.herokuapp.com/
