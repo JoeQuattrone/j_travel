@@ -1,8 +1,3 @@
-require 'json'
-require 'nokogiri'
-require 'open-uri'
-require 'rest-client'
-
 class Hotel < ApplicationRecord
   has_many :users, through: :visits
   has_many :visits
