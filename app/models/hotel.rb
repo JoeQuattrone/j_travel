@@ -4,7 +4,7 @@ require 'rest-client'
 require 'net/http'
 require 'json'
 
-require 'pry' #remove later
+
 
 class Hotel < ApplicationRecord
   has_many :users, through: :visits
