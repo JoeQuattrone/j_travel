@@ -12,8 +12,11 @@ class HotelsController < ApplicationController
     city_name = hotel_params["city"].capitalize
     budget = hotel_params[:budget]
 
-    Hotel.get_data(city_name)
-    @hotels = Hotel.query_by_city(city_name)
+      @hotels = Hotel.query_by_city(city_name)
+    if @hotels.empty?
+      Hotel.get_data(city_name)
+      @hotels = Hotel.query_by_city(city_name)
+    end
 
     #querys hotel on price if budget is submitted
     if !budget.empty?
