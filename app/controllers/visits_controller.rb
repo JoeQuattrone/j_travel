@@ -5,8 +5,12 @@ class VisitsController < ApplicationController
 
   def index
     @user = User.find_by(id: params[:user_id])
-    @visits = @user.visits.all
-    render :layout => "login_register"
+    if logged_in?(@user)
+      @visits = @user.visits.all
+      render :layout => "login_register"
+    else
+      redirect_to root_path
+    end
   end
 
   def new
@@ -49,8 +53,12 @@ class VisitsController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:user_id])
-    @visit = Visit.find_by(id: params[:id])
-    @hotel = @visit.hotel
+    if logged_in?(@user)
+      @visit = Visit.find_by(id: params[:id])
+      @hotel = @visit.hotel
+    else
+      redirect_to root_path
+    end
   end
 
   def edit
